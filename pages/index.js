@@ -6,6 +6,7 @@ import BlogButton from '../components/BlogButton';
 import BlogForm from '../components/blogform';
 import { useState } from 'react';
 import Modal from '../components/Modal';
+import Blogs from '../components/Blogs';
 
 export default function Home() {
 
@@ -24,7 +25,7 @@ export default function Home() {
     <>
       <Navbar setOpen = {handleClick}/>
       {open && <Modal setClose = {handleClose}/>}
-  
+      <Blogs />
     </>
 
   );
